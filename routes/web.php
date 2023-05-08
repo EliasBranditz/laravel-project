@@ -17,8 +17,14 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('about', function() {
+Route::get('About', function () {
+return 'About Page'; 
+});
 
-}); 
+Route::get('reporting', function () {
+return 'Reporting Feature';
+});
+
+Route::resource('reports', 'ReportsController');
 
 // Whatever logic to add reporting.
